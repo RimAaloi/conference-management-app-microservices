@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: keynote-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+    import-check:
+      enabled: false
+  config:
+    import: "optional:configserver:http://localhost:8888"
