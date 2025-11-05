@@ -33,7 +33,13 @@
     </properties>
     <!-- AJOUTE APRÈS LA BALISE <properties> -->
     <dependencyManagement>
+
         <dependencies>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.6.0</version>
+            </dependency>
             <!-- Spring Boot BOM -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
